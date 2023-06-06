@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>memengakak</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="Logo memengakak.png" alt="Memengakak" width="120" height="140"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signin.html">Follow</a></li>
+        <li><a href="signin.html">Like</a></li>
+        <li>
+          <form>
+            <input type="text" placeholder="Search">
+            <button type="submit">Go</button>
+          </form>
+        </li>
+        <li><a href="signin.html" class="tbl-merah">Upload</a></li>
+        <li><a href="signin.html" class="tbl-biru">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="user-profile">
+      <link rel="stylesheet" type="text/css" href="follow.css">
+      <div class="user-info">
+        <img src="Goku.jpg" alt="Profile Picture">
+        <div class="user-details">
+          <h2>Wang Ling</h2>
+        </div>
+      </div>
+    </div>
+    <img src="meme ditinggal ke pasar.jpg" alt="">
+    <style>
+      .like-dislike-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .like-button,
+      .dislike-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        transition: color 0.3s;
+        padding: 0;
+      }
+
+      .like-button img,
+      .dislike-button img {
+        width: 100px;
+        height: 30px;
+      }
+
+      .like-button.active img {
+        filter: grayscale(0);
+      }
+
+      .dislike-button.active img {
+        filter: grayscale(1);
+      }
+    </style>
+    </head>
+
+    <body>
+      <div class="like-dislike-container">
+        <button class="like-button" onclick="toggleLike()">
+          <img id="like-image" src="like.png" alt="like">
+        </button>
+        <button class="dislike-button" onclick="toggleDislike()">
+          <img id="dislike-image" src="dislike.png" alt="dislike">
+        </button>
+      </div>
+
+      <script>
+        function toggleLike() {
+          var likeButton = document.querySelector('.like-button');
+          var dislikeButton = document.querySelector('.dislike-button');
+          var likeImage = document.querySelector('#like-image');
+          var dislikeImage = document.querySelector('#dislike-image');
+          likeButton.classList.toggle('active');
+          dislikeButton.classList.remove('active');
+
+          if (likeButton.classList.contains('active')) {
+            likeImage.src = 'like.png';
+            dislikeImage.src = 'dislike.png';
+          } else {
+            likeImage.src = 'like.png';
+            dislikeImage.src = 'dislike.png';
+          }
+        }
+
+      </script>
+
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <ul class="comment-list">
+          <li class="comment">
+            <img src="kaori cicak.jpg" alt="User Avatar">
+            <div class="comment-content">
+              <p class="comment-author">kakek ultraman</p>
+              <p class="comment-text">hahaha,tepat sekali</p>
+            </div>
+          </li>
+          <li class="comment">
+            <img src="bapak ultra.jpg" alt="User Avatar">
+            <div class="comment-content">
+              <p class="comment-author">bapak ultraman</p>
+              <p class="comment-text">sama...dulu aku juga sering begitu ketika mau ikut ke pasar kalau belum mandi
+                langsung ditinggal wkwkwk</p>
+            </div>
+          </li>
+        </ul>
+        <form class="comment-form">
+          <label for="comment-input">Leave a comment:</label>
+          <input id="comment-input" type="text" placeholder="Enter your comment...">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="user-profile">
+        <link rel="stylesheet" type="text/css" href="follow.css">
+        <div class="user-info">
+          <img src="Goku.jpg" alt="Profile Picture">
+          <div class="user-details">
+            <h2>Wang Ling</h2>
+          </div>
+        </div>
+      </div>
+      <img src="batu.jpg" alt="">
+      <style>
+        .like-dislike-container {
+          display: flex;
+          align-items: center;
+        }
+  
+        .like-button,
+        .dislike-button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          transition: color 0.3s;
+          padding: 0;
+        }
+  
+        .like-button img,
+        .dislike-button img {
+          width: 100px;
+          height: 30px;
+        }
+  
+        .like-button.active img {
+          filter: grayscale(0);
+        }
+  
+        .dislike-button.active img {
+          filter: grayscale(1);
+        }
+      </style>
+      </head>
+  
+      <body>
+        <div class="like-dislike-container">
+          <button class="like-button" onclick="toggleLike2()">
+            <img id="like-image" src="like.png" alt="Like">
+          </button>
+          <button class="dislike-button" onclick="toggleDislike2()">
+            <img id="dislike-image" src="dislike.png" alt="Dislike">
+          </button>
+        </div>
+  
+        <script>
+          function toggleLike2() {
+            var likeButton = document.querySelector('.like-button');
+            var dislikeButton = document.querySelector('.dislike-button');
+            var likeImage = document.querySelector('#like-image');
+            var dislikeImage = document.querySelector('#dislike-image');
+            likeButton.classList.toggle('active');
+            dislikeButton.classList.remove('active');
+  
+            if (likeButton.classList.contains('active')) {
+              likeImage.src = 'like.png';
+              dislikeImage.src = 'dislike.png';
+            } else {
+              likeImage.src = 'like.png';
+              dislikeImage.src = 'dislike.png';
+            }
+          }
+        </script>
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <ul class="comment-list">
+          <li class="comment">
+            <img src="kaori cicak.jpg" alt="User Avatar">
+            <div class="comment-content">
+              <p class="comment-author">kakek ultraman</p>
+              <p class="comment-text">hahaha,tepat sekali</p>
+            </div>
+          </li>
+          <li class="comment">
+            <img src="bapak ultra.jpg" alt="User Avatar">
+            <div class="comment-content">
+              <p class="comment-author">bapak ultraman</p>
+              <p class="comment-text">sama...dulu aku juga sering begitu ketika mau ikut ke pasar kalau belum mandi
+                langsung ditinggal wkwkwk</p>
+            </div>
+          </li>
+        </ul>
+        <form class="comment-form">
+          <label for="comment-input">Leave a comment:</label>
+          <input id="comment-input" type="text" placeholder="Enter your comment...">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <footer>
+        <p>Developed by abed,fauzan,faiz</p>
+      </footer>
+      </div>
+    </body>
+
+</html>

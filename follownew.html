@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>memengakak</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="Logo memengakak.png" alt="Memengakak" width="140" height="160"></a>
+    <nav>
+      <ul>
+        <li style="margin-top: 10px;"><a href="newhome.html">Home</a></li>
+        <li style="margin-top: 10px;"><a href="follownew.html">Follow</a></li>
+        <li style="margin-top: 10px;"><a href="likenew.html">Like</a></li>
+        <form style="margin-top: -10px; margin-right: 10px;">
+          <li><input type="text" placeholder="Search"></li>
+          <li style="margin-left: -20px;"><button type="submit">Go</button>
+        </form>
+        </li>
+        <li style="margin-top: 10px;"><a href="halaman-baru.html" class="tbl-merah">Upload</a></li>
+        <img src="Goku.jpg" alt="Avatar" class="avatar" onclick="goToProfile()">
+
+        <script>
+          function goToProfile() {
+            window.location.href = "Profile.html";
+          }
+        </script>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="user-profile">
+      <link rel="stylesheet" type="text/css" href="follow.css">
+      <div class="user-info">
+        <img src="Goku.jpg" alt="Profile Picture">
+        <div class="user-details">
+          <h2>Wang Ling</h2>
+          <p>@songoku</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <button class="follow-btn">Followed</button>
+    </div>
+  </main>
+</body>
+<script>
+  var followButton = document.querySelector('.follow-btn');
+
+  followButton.addEventListener('click', function() {
+    if (followButton.textContent === 'Followed') {
+      followButton.textContent = 'Follow';
+    } else {
+      followButton.textContent = 'Followed';
+    }
+  });
+</script>
+
+</html>
